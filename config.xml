@@ -6,10 +6,10 @@
         id        = "Desert Aire"
         version   = "2.0.1">
 
-    <name>DA Trial 2</name>
+    <name>Desert Aire</name>
 
     <description>
-        Sample trial run for Desert Aire
+        Trial run for Desert Aire
     </description>
 
     <author href="http://phonegap.com" email="tsaunders@desert-aire.com">
