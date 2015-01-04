@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "Desert Aire"
-        version   = "1.0.1">
+        version   = "2.0.1">
 
     <name>DA Trial 2</name>
 
@@ -12,14 +12,14 @@
         Sample trial run for Desert Aire
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
+    <author href="http://phonegap.com" email="tsaunders@desert-aire.com">
         DA Team
     </author>
 	
 	<!-- Define app icon for each platform. -->
     <icon src="/images/DA logo.png" />
     <icon src="/images/DA logo.png.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-	<gap:splash src="/images/DA logo.png.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+	<gap:splash src="/images/DA logo.png"     gap:platform="android" gap:qualifier="port-xhdpi" width="300" height="300" />
 
 <preference name="phonegap-version" value="3.6.3" />
 </widget>
