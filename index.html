@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 <div id="page" data-role="page" >
 	<div data-role="header">
-	  <div class="logo"><img src="images/DA new logo.jpg" width="400" height="100" alt="Leisure Treasure Hunt"/></div>
+	  <div class="logo"><img src="images/DA new logo.jpg" width="380" height="100" alt="Leisure Treasure Hunt"/></div>
 	</div>
 	<div data-role="content">
 	  <ul data-role="listview" data-inset="true">
@@ -35,7 +35,7 @@ $(document).ready(function(){
 		</ul>		
 	</div>
 	<div data-role="footer">
-		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+		<h4>Desert Aire &copy; 2015</h4>
 	</div>
 </div>
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
 		<p>The primary sponsor of the Leisure Treasure Hunt is, of course, the Landon Hotel itself. Other sponsors (and their prizes) will be announced in a few short weeks.</p>
 	</div>
 	<div data-role="footer">
-		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+		<h4>Desert Aire &copy; 2015</h4>
 	</div>
 </div>
 
@@ -74,10 +74,41 @@ $(document).ready(function(){
             <label for="email">Email:</label>
             <input name="email" type="email" required id="email" value="" data-theme="b" />
           </div>
+          <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+              <legend>Where are you from? (Choose all that apply)</legend>
+              <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_0" title="Guest" value="guest" />
+              <label for="fromCheckbox_0">Guest</label>
+              <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_1" title="Local Resident" value="local" />
+              <label for="fromCheckbox_1">Local Resident</label>
+              <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_2" title="Area Visitor" value="area-visitor" />
+              <label for="fromCheckbox_2">Area Visitor</label>
+            </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>T-Shirt Size</legend>
+              <input name="tshirtRadio" type="radio" id="tshirtRadio_0" title="Small" value="small" />
+              <label for="tshirtRadio_0">Small</label>
+              <input name="tshirtRadio" type="radio" id="tshirtRadio_1" title="Medium" value="medium" />
+              <label for="tshirtRadio_1">Medium</label>
+              <input name="tshirtRadio" type="radio" id="tshirtRadio_2" title="Large" value="large" />
+              <label for="tshirtRadio_2">Large</label>
+            </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <label for="poolSelect" class="select">Is the pool full and heated?:</label>
+            <select name="poolSelect" id="poolSelect">
+              <option selected>Choose one...</option>
+              <option value="empty">Pool Empty</option>
+              <option value="noHeat">Pool full, no heat</option>
+              <option value="heated">Pool full and heated</option>
+            </select>
+          </div>
         </form>
         
 	<div data-role="footer">
-	  <h4>Leisure Treasure Hunt &copy; 2014</h4>
+	  <h4>Desert Aire &copy; 2015</h4>
 	</div>
 </div>
 
@@ -96,7 +127,7 @@ $(document).ready(function(){
         </ul>
 	</div>
 	<div data-role="footer">
-		<h4>Leisure Treasure Hunt &copy; 2014</h4>
+		<h4>Desert Aire &copy; 2015</h4>
 	</div>
 </div>
 
@@ -108,7 +139,7 @@ $(document).ready(function(){
 		<p>Shhhhh! It's a secret... for now! The location will be announced very soon.</p>
 	</div>
 	<div data-role="footer">
-	  <h4>Leisure Treasure Hunt &copy; 2014</h4>
+	  <h4>Desert Aire &copy; 2015</h4>
 	</div>
 </div>
 
