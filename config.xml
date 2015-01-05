@@ -17,9 +17,9 @@
     </author>
 	
 	<!-- Define app icon for each platform. -->
-    <icon src="/images/DA logo.png" />
-    <icon src="/images/DA logo.png.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-	<gap:splash src="/images/DA logo.png"     gap:platform="android" gap:qualifier="port-xhdpi" width="300" height="300" />
-
+    <icon src="/images/DA new word logo.png" />
+    <icon src="/images/DA new word logo.png.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+<!--	<gap:splash src="/images/DA logo.png"     gap:platform="android" gap:qualifier="port-xhdpi" width="300" height="300" />
+-->
 <preference name="phonegap-version" value="3.6.3" />
 </widget>
