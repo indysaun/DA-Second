@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="styles/DAtheme.min.css" rel="stylesheet" type="text/css"/>
+<link href="styles/custom.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	if (navigator.userAgent.match(/(iPad.*|iPhone.*|iPod.*);.*CPU.*OS (7|8)_\d/i)) {
+		$("body").addClass("ios7");
+		$("body").append('');
+	}
+}); 
+</script>
+</head> 
+<body> 
+
+<div id="page" data-role="page" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Service / Installation</h1>
+	</div>
+	<div data-role="content">
+    	<h3>Service Form</h3>	
+	</div>
+    	<p> fill out our entry form below</p>
+        <form method="post" action="" id="userForm">
+          <div data-role="fieldcontain">
+            <label for="name">Name:</label>
+            <input name="name" type="text" autofocus required id="name" value="" data-theme="b" />
+          </div>
+          <div data-role="fieldcontain">
+            <label for="email">Email:</label>
+            <input name="email" type="email" required id="email" value="" data-theme="b" />
+          </div>
+          <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+              <legend>Where are you from? (Choose all that apply)</legend>
+              <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_0" title="Guest" value="guest" />
+              <label for="fromCheckbox_0">Guest</label>
+              <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_1" title="Local Resident" value="local" />
+              <label for="fromCheckbox_1">Local Resident</label>
+              <input name="fromCheckbox" type="checkbox" class="custom" id="fromCheckbox_2" title="Area Visitor" value="area-visitor" />
+              <label for="fromCheckbox_2">Area Visitor</label>
+            </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>T-Shirt Size</legend>
+              <input name="tshirtRadio" type="radio" id="tshirtRadio_0" title="Small" value="small" />
+              <label for="tshirtRadio_0">Small</label>
+              <input name="tshirtRadio" type="radio" id="tshirtRadio_1" title="Medium" value="medium" />
+              <label for="tshirtRadio_1">Medium</label>
+              <input name="tshirtRadio" type="radio" id="tshirtRadio_2" title="Large" value="large" />
+              <label for="tshirtRadio_2">Large</label>
+            </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <label for="poolSelect" class="select">Is the pool full and heated?:</label>
+            <select name="poolSelect" id="poolSelect" data-native-menu="false">
+              <option selected>Choose one...</option>
+              <option value="empty">Pool Empty</option>
+              <option value="noHeat">Pool full, no heat</option>
+              <option value="heated">Pool full and heated</option>
+            </select>
+          </div>
+        </form>
+	
+	<div data-role="footer">
+		<h4>Desert Aire &copy; 2015</h4>
+	</div>
+</div>
+
+
+
+</body>
+</html>
