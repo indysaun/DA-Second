@@ -66,6 +66,14 @@ $(document).ready(function(){
               <option value="noHeat">Pool full, no heat</option>
               <option value="heated">Pool full and heated</option>
             </select>
+            <div data-role="fieldcontain">
+              <label for="poolWater">Pool Water Heat:</label>
+              <select name="poolWater" id="poolWater" data-role="slider">
+                <option value="off" selected>No</option>
+                <option value="on">Yes</option>
+              </select>
+            </div>
+            <input name="submitBtn" type="submit" id="submitBtn" value="Submit" data-icon="check" />
           </div>
         </form>
 	
@@ -73,8 +81,27 @@ $(document).ready(function(){
 		<h4>Desert Aire &copy; 2015</h4>
 	</div>
 </div>
+<div data-role="page" id="thanks">
+  <div data-role="header">
+    <h1>Thanks</h1>
+  </div>
+  <div data-role="content">Thank you for your submission</div>
+  <a href="index.html" data-role="button" data-icon="home">Home</a>
+  <div data-role="footer">
+    <h4>Desert Aire &copy; 2015</h4>
+  </div>
+</div>
 
 
 
 </body>
+<script>
+	$('#submitBtn').click(function () {
+		var theName = $('#userForm #name').val();
+		var theThanks = 'Thank you, ' + theName;
+		$.mobile.navigate( "#thanks");
+		$('#thanks h1').text(theThanks);
+	});
+	</script>
+    
 </html>
